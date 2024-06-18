@@ -1,0 +1,87 @@
+.remove_bg {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  z-index: 4;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.selectBtn {
+  max-width: 106px;
+  margin-right: 3px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .selectBtn {
+    max-width: 50px;
+  }
+}
+
+.select {
+  display: flex;
+  z-index: 9999;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  background: #111B33;
+  border-radius: 8px;
+  width: 100%;
+  color: #ffffff;
+}
+.select .mainIcon {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in;
+}
+
+.costumeSelect {
+  position: relative;
+}
+.costumeSelect ::-webkit-scrollbar {
+  display: none;
+}
+
+.selectMenu {
+  position: absolute;
+  z-index: 9;
+  max-height: 324px;
+  width: 100%;
+  overflow-y: auto;
+  margin-top: 8px;
+  background: #111B33;
+  box-shadow: 0px 30px 50px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+@media screen and (max-width: 480px) {
+  .selectMenu {
+    width: 150%;
+  }
+}
+.selectMenu .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.25);
+  padding: 16px 20px;
+  text-align: left;
+  width: 100%;
+}
+.selectMenu .options:last-child {
+  box-shadow: none;
+}
+.selectMenu .options p {
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.active {
+  padding: 1px 1px;
+}/*# sourceMappingURL=selectStyle.module.css.map */

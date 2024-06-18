@@ -1,0 +1,26 @@
+.menuItem {
+    &:first-child {
+        padding-top: 16px;
+    }
+    &:last-child {
+        padding-bottom: 16px;
+    }
+    &:hover {
+        background-color: $border;
+    }
+}
+
+.subscription {
+    position: relative;
+    .image {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+}
+
+.staffList {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

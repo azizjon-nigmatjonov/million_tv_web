@@ -1,0 +1,50 @@
+.bannerMoviePage {
+    // height: calc(100vh - 90px);
+    position: relative;
+
+    &::after {
+        content: '';
+        background: linear-gradient(180deg, rgba(1, 6, 20, 0) 0%, #010614 100%);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+    // &::before {
+    //     content: '';
+    //     background: linear-gradient(0deg, rgba(1, 6, 20, 0) 100%, #010614 0%);
+    //     position: absolute;
+    //     right: 0;
+    //     top: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 2;
+    // }
+}
+.btns {
+    width: 100%;
+    @media (max-width: 640px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+.playBtnBox {
+    @media (max-width: 640px) {
+        width: 100%;
+        margin-bottom: 20px;
+        .playBtn {
+            & > div {
+                flex-direction: row !important;
+            }
+            & > div > span {
+                position: sticky !important;
+            }
+        }
+    }
+}
+.shareBtn {
+    @media (min-width: 640px) {
+        display: none;
+    }
+}

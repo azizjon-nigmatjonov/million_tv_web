@@ -1,0 +1,119 @@
+.form {
+    // position: relative;
+    .headerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        .title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 35px;
+            color: #ffffff;
+            margin-bottom: 32px;
+        }
+        button {
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            right: 32px;
+            top: 32px;
+        }
+    }
+    .hr {
+        width: 546px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.12);
+        margin-bottom: 8px;
+    }
+    .label {
+        margin-top: 16px;
+        margin-bottom: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #a9a7b4;
+    }
+    .cardInfoContainer {
+        position: relative;
+        .cardsPlaceholder {
+            position: absolute;
+            top: 14px;
+            right: 12px;
+            svg {
+                width: 20px;
+                height: 28px;
+            }
+        }
+    }
+    .input {
+        width: 546px;
+        height: 56px;
+        background: rgba(255, 255, 255, 0.07);
+        border-radius: 8px;
+        color: rgba(255, 255, 255, 0.7);
+        padding-left: 12px;
+        &:focus {
+            outline: 1px solid #03a9f4;
+        }
+    }
+    .buttons {
+        margin-top: 32px;
+        & > * {
+            width: 267px;
+            height: 52px;
+            text-transform: inherit;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .resetButton {
+            background: #383641;
+            margin-right: 12px;
+        }
+        .submitButton {
+            background: #03a9f4;
+        }
+    }
+}
+
+.successModal {
+    width: 523px;
+    height: 352px;
+    color: #a9a7b4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .successTitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 28px;
+        color: #ffffff;
+        margin-top: 32px;
+    }
+    .modalMessage {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 8px;
+    }
+    .modalBackButton {
+        font-style: normal;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        text-transform: inherit;
+        width: 459px;
+        height: 56px;
+        margin-top: 32px;
+    }
+}

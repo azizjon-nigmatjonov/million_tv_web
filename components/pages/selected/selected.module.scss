@@ -1,0 +1,29 @@
+.selected_aligens {
+    display: grid;
+    justify-items: center;
+    column-gap: 32px;
+    row-gap: 40px;
+    margin-top: 16px;
+    @media screen and (max-width: 1620px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    @media screen and (min-width: 1620px) {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    @media screen and (max-width: 1170px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    @media screen and (max-width: 910px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 30px;
+        row-gap: 25px;
+    }
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        justify-items: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,26 @@
+.materialTabs {
+  color: white !important;
+  button:last-child {
+    margin-right: 0;
+  }
+}
+.MuiGrid-item  {
+  padding: 0 !important;
+}
+.MuiButtonBase-root {
+  padding: 0 !important;
+}
+.gridTrailer {
+  padding: 20px 0 0 0 !important;
+}
+.newGrid {
+  padding: 70px 0 0 60px !important;
+}
+
+@media (max-width: 768px) {
+  .gridTrailer {
+    padding: 50px 0 0  !important;
+    margin: 0 40px !important;
+    width: 100%;
+  }
+}

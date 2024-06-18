@@ -1,0 +1,47 @@
+.btn {
+    background-color: $main-color;
+    padding: 0 10px;
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flag {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    & > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.text {
+    margin-left: 10px;
+    color: white;
+}
+
+.menu {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+}
+
+@include media('mobile') {
+    .btn {
+        height: 45px;
+        .text {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #020c24;
+    border-radius: 12px;
+    padding: 24px;
+
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 620px;
+
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .text {
+        color: #8B97B0;
+        margin-top: 6px;
+        text-align: center;
+    }
+    .button,
+    .check {
+        background-color: #03A9F4;
+        width: 100%;
+        height: 48px;
+        margin-top: 24px;
+        border-radius: 12px;
+    }
+    .check {
+        background-color: rgba(3, 169, 244, 0.10);
+    }
+}

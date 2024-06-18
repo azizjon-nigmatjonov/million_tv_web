@@ -1,0 +1,37 @@
+@mixin remove-scroll() {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+@mixin smooth-scroll() {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+@mixin alignCenterJustifyBetween() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin alignCenter() {
+  display: flex;
+  align-items: center;
+}
+@mixin alignCenterJusftifyCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexDirectionColumn() {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexDirectionColumnReverse() {
+  display: flex;
+  flex-direction: column-reverse;
+}

@@ -1,0 +1,184 @@
+.formotp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'SF-Pro-Display-regular', 'Roboto', sans-serif !important;
+    width: 412px;
+    padding: 40px;
+    background: #010614;
+    border-radius: 12px;
+    color: white;
+    h1 {
+        font-family: 'SF-Pro-Display-regular', 'Roboto', sans-serif !important;
+    }
+    @media (max-width: 768px) {
+        width: 70vw;
+    }
+    @media (max-width: 576px) {
+        width: 90vw;
+        padding: 24px;
+    }
+
+    .buttonsubmit {
+        background: #03a9f4;
+        border-radius: 12px;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 500;
+        height: 48px;
+        width: 100%;
+        color: #fff;
+        border: none;
+        &:hover {
+            background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.08),
+                    rgba(0, 0, 0, 0.08)
+                ),
+                #03a9f4;
+        }
+    }
+
+    .disable {
+        background: #ebebeb;
+        border-radius: 8px;
+        height: 48px;
+        width: 100%;
+        color: #111B33;
+    }
+    .resendCode {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 0 28px 0px !important;
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: -0.006em;
+        text-underline-offset: 4px;
+        font-family: 'SF-Pro-Display-regular', 'Roboto', sans-serif;
+        position: relative;
+        &:hover {
+            color: #03a9f4;
+        }
+        &:active {
+            color: rgba(237, 174, 1, 0.7);
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0 0 16px 0 !important;
+            font-size: 15px;
+        }
+    }
+
+    .otpconfirm {
+        .container {
+            margin-top: 30px;
+            height: 48px;
+            width: 100%;
+        }
+
+        .character {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 50px;
+            color: white;
+            background-color: #211f29;
+            border: 1px solid #393939;
+            border-radius: 8px;
+            border: none;
+            font-size: 22px;
+            outline: none;
+            @media screen and (max-width: 576px) {
+                margin-left: 4px;
+            }
+        }
+        .nofocus {
+            line-height: 50px;
+            color: white;
+            background-color: #211f29;
+            border: 1px solid #ed0101 !important;
+            border-radius: 8px;
+            margin-left: 7px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            outline: none;
+        }
+
+        .character:first-child {
+            margin-left: 0;
+        }
+        .nofocus:first-child {
+            margin-left: 0;
+        }
+
+        .character__inactive {
+            // background-color: rgba(255, 255, 255, 0.1);
+            background-color: #211f29;
+            border: 1px solid #333333 !important;
+        }
+
+        .character__selected {
+            // background-color: rgba(255, 255, 255, 0.1);
+            background-color: #211f29;
+            border: 1px solid #03a9f4;
+
+            &::before {
+                content: '|';
+                color: #03a9f4;
+            }
+        }
+        .character__selected:last-child {
+            border: 2px solid #03a9f4;
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 780px) {
+    .integrationbuttons {
+        flex-direction: row !important;
+    }
+}
+
+.errorMessage {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #d31919;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}

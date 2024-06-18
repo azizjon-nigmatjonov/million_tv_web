@@ -1,0 +1,9 @@
+.items {
+    display: flex;
+
+    .item {
+        &:not(:last-child) {
+            margin-right: 13px;
+        }
+    }
+}

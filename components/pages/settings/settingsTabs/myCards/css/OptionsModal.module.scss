@@ -1,0 +1,77 @@
+.modalContainer {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    .modalHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .modalHeadIcon {
+            margin-left: 138px !important;
+            margin-top: 24px;
+            width: 80px;
+            height: 80px;
+            .modalHeadCard {
+                display: flex;
+                flex-direction: column;
+                width: 120px;
+                height: 72px;
+                background: rgba(255, 255, 255, 0.12);
+                border-radius: 8px;
+                // margin-left: 8px !important;
+                // margin-top: 8px !important;
+                span {
+                    margin-bottom: 8px;
+                }
+                .modalHeadCardIcon {
+                    svg {
+                        width: 28px;
+                        height: 17.5px;
+                    }
+                }
+                .modalHeadNumber {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 22px;
+                    color: #a9a7b4;
+                    margin-top: 16.5px;
+                }
+                & > * {
+                    margin-left: 8px;
+                }
+            }
+        }
+        button {
+            position: absolute;
+            right: 16px;
+            top: 24px;
+        }
+    }
+    .modalButtons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 74px !important;
+
+        button {
+            color: #ffffff;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            width: 388px;
+            height: 52px;
+            margin-left: 16px;
+            text-transform: inherit;
+        }
+
+        .modalCancel {
+            background: #03a9f4;
+            margin-bottom: 16px;
+        }
+        .modalAction {
+            background: #383641;
+            border: none;
+        }
+    }
+}

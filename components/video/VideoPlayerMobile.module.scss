@@ -1,0 +1,33 @@
+.wrapperRelative {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    position: relative;
+    .wrapperAbsolute {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+.movieInfoText {
+    @media screen and (max-width: 500px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    @media screen and (max-width: 400px) {
+    }
+}
+.movie_info_adapt {
+    @media screen and (max-width: 400px) {  
+    }
+}
+
+.buttonSection {
+    @media screen and (max-width: 1299px) {
+        // margin-left: 40px;
+    }
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+}

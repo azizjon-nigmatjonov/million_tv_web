@@ -1,0 +1,32 @@
+.drop {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        background: #1A1A1C !important;
+    }
+    .drop__img {
+                height: 44px;
+                width: 100%;
+                border-radius: 12px;
+                object-fit: cover;
+            }
+}
+
+.profile_link {
+    color: #fff;
+    transition: color 0.1s ease-in;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.006em;
+}
+.link__logout {
+    font-weight: 400;
+}

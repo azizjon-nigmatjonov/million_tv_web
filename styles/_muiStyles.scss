@@ -1,0 +1,62 @@
+#CTabID {
+}
+.FInputMask {
+}
+.MuiDivider-root {
+    background-color: #111b33 !important;
+}
+
+.CBreadcrumbs-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .CBreadcrumbs {
+    .breadcrumb-item {
+      display: flex;
+      align-items: center;
+      &.link {
+        cursor: pointer;
+        &:hover {
+          color: #8B97B0;
+  
+          .breadcrumb-label {
+            color: #8B97B0;
+          }
+        }
+      }
+  
+      &.last {
+        cursor: auto;
+        .breadcrumb-label {
+          color: #8B97B0;
+        }
+        &:hover {
+          color: #8B97B0;
+  
+          .breadcrumb-label {
+            color: #8B97B0;
+          }
+        }
+      }
+    }
+  
+    .breadcrumb-label {
+      margin-left: 10px;
+      color: $whiteLighter;
+      white-space: pre-wrap;
+    }
+  
+    &.small {
+      .breadcrumb-label {
+        margin-left: 0px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  
+    .MuiBreadcrumbs-separator {
+      margin: 0 5px;
+      color: #000;
+    }
+  }
+  

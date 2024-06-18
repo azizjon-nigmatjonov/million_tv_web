@@ -1,0 +1,40 @@
+.container {
+    .right_top {
+        display: none;
+    }
+    display: flex;
+    justify-content: center;
+    @media (max-width: 768px) {
+        .right_bottom {
+            display: none;
+        }
+        .right_top {
+            display: inline;
+        }
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        .title_info {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 35px;
+            margin-bottom: 8px;
+        }
+        .title_advice {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            max-width: 340px;
+            margin-bottom: 28px;
+        }
+        .add_button {
+            text-transform: none;
+        }
+    }
+    .right {
+        margin-left: 12px;
+    }
+}

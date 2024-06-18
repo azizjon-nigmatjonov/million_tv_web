@@ -1,0 +1,38 @@
+.root {
+    background: linear-gradient(180deg, rgba(28, 25, 44, 0) 0%, #000000 72.92%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh !important;
+    .fixedBox {
+        position: fixed;
+        bottom: 35px;
+        left: 0;
+        right: 0;
+    }
+    .title {
+        animation: slide-up-title 1.2s cubic-bezier(0.65, 0, 0.35, 1) both;
+    }
+    .info  {
+        animation: slide-up-title 1.4s cubic-bezier(0.65, 0, 0.35, 1) both;
+    }
+    .watch {
+        animation: slide-up-title 1.6s cubic-bezier(0.65, 0, 0.35, 1) both;
+    }
+    .buttons {
+        animation: slide-up-title 1.8s cubic-bezier(0.65, 0, 0.35, 1) both;
+    }
+}
+
+
+@keyframes slide-up-title {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(-10px);
+    }
+} 

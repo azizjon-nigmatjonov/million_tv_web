@@ -1,0 +1,46 @@
+@import 'styles/_variables';
+@import 'styles/_mixins';
+.FavoriteProfileBottom {
+    // background: linear-gradient(180deg, rgba(28, 25, 44, 0) 0%, #111B33 100%);
+}
+.wrapper {
+    margin: 40px 0 80px 0;
+}
+.skiptLink {
+    a {
+        cursor: pointer;
+        color: $whiteLighter;
+        text-decoration: none;
+        font-size: 18px;
+        display: inline-flex;
+        align-items: center;
+        svg {
+            font-size: 14px;
+            margin-top: 3px;
+        }
+    }
+    margin-bottom: 20px;
+}
+
+
+.imgProfileUpdateActive {
+    position: relative;
+    transition: all 0.3s;
+    img {
+        transform: scale(1.03);
+        transition: all 0.3s;
+    }
+    &::after {
+        content: '';
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56));
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.3s !important;
+    }
+}
+.FavoriteProfileBottom {
+    background: linear-gradient(180deg, rgba(28, 25, 44, 0) 0%, #1C192C 100%);
+}

@@ -1,0 +1,14 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #020c24;
+    border-radius: 12px;
+    padding: 24px;
+    width: 558px;
+
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+}

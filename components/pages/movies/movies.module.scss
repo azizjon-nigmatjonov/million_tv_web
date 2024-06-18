@@ -1,0 +1,65 @@
+// .movies_wrapper {
+//     display: grid;
+//     justify-items: start;
+//     column-gap: 32px;
+//     row-gap: 32px;
+//     @media screen and (min-width: 1520px) {
+//         grid-template-columns: repeat(8, minmax(0, 1fr));
+//     }
+//     @media screen and (min-width: 1740px) {
+//         grid-template-columns: repeat(8, minmax(0, 1fr));
+//     }
+//     @media screen and (min-width: 2000px) {
+//         grid-template-columns: repeat(8, minmax(0, 1fr));
+//     }
+//     @media screen and (max-width: 1520px) {
+//         grid-template-columns: repeat(8, minmax(0, 1fr));
+//         justify-items: start;
+//     }
+//     @media screen and (max-width: 1390px) {
+//         grid-template-columns: repeat(7, minmax(0, 1fr));
+//     }
+//     @media screen and (max-width: 1250px) {
+//         grid-template-columns: repeat(6, minmax(0, 1fr));
+//     }
+//     @media screen and (max-width: 1050px) {
+//         grid-template-columns: repeat(4, minmax(0, 1fr));
+//     }
+//     @media screen and (max-width: 640px) {
+//         justify-items: center;
+//         grid-template-columns: repeat(2, minmax(0, 1fr));
+//         row-gap: 24px;
+//         column-gap: 20px;
+//     }
+//     @media screen and (max-width: 425px) {
+//         justify-items: center;
+//         column-gap: 20px;
+//     }
+//     @media screen and (max-width: 350px) {
+//         grid-template-columns: repeat(1, minmax(0, 1fr));
+//         column-gap: 20px;
+//     }
+//     @media (max-width: 350px) {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         column-gap: 20px;
+//     }
+// }
+
+.contentWrapper {
+    height: 100vh;
+    min-height: 720px;
+    display: flex;
+    align-items: flex-end;
+}
+
+// .loading {
+//     position: absolute;
+//     top: calc(50% - 80px);
+//     left: 50%;
+//     transform: translateY(-50%);
+//     transform: translateX(-50%);
+//     width: 200px;
+//     height: 200px;
+// }

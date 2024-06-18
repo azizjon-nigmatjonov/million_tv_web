@@ -1,0 +1,33 @@
+.tv_channels {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 32px;
+  margin: 48px 0;
+}
+@media screen and (max-width: 1320px) {
+  .tv_channels {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 1050px) {
+  .tv_channels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 500px) {
+  .tv_channels {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 425px) {
+  .tv_channels {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .tv_channels {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}/*# sourceMappingURL=tv.module.css.map */

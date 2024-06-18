@@ -1,0 +1,52 @@
+.selectMenu {
+    position: absolute;
+    background-color: $main-color;
+    border-radius: 8px;
+    min-width: 100%;
+    width: auto;
+    z-index: 999;
+
+    .list {
+        overflow-y: auto;
+        overflow-x: hidden;
+        // padding: 10px;
+        .item {
+            margin: 10px 10px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // width: 100%;
+            padding-right: 20px;
+            padding-bottom: 10px;
+
+            &.checked {
+                color: #03a9f4;
+            }
+            .checkbox {
+                background-color: $mainTextColor;
+                width: 20px;
+                height: 20px;
+                @include alignCenterJusftifyCenter;
+                border-radius: 2px;
+            }
+        }
+
+        .multpleWrapper {
+            display: flex;
+        }
+
+    }
+    
+    .list {
+        -ms-overflow-style: none;
+            /* IE and Edge */
+        scrollbar-width: none;
+    
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

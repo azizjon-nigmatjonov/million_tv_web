@@ -1,0 +1,135 @@
+.card {
+    width: 100%;
+    height: 340px;
+    position: relative;
+
+    &.hoverToBottom {
+        &:hover {
+            .inner {
+                top: 0px;
+            }
+        }
+    }
+    &:hover {
+        .inner {
+            position: absolute;
+            z-index: 9;
+            left: 0;
+            top: -40px;
+            width: 110%;
+            transform: scale(1.1);
+            height: auto;
+            left: -5%;
+
+            .imageWrapper {
+                .image {
+                    border-radius: 0;
+                    border-top-right-radius: 8px;
+                    border-top-left-radius: 8px;
+                }
+            }
+
+            .bottom {
+                padding: 8px;
+                background-color: $secondryBackground;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+
+                .infoPrice {
+                    display: none;
+                }
+                .infoMovie {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .inner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        transition: 0.3s;
+        cursor: pointer;
+
+        .imageWrapper {
+            width: 100%;
+            height: 280px;
+            position: relative;
+            overflow: hidden;
+
+            .tags {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                // background-color: $mainTextColor;
+                padding: 2px 8px;
+                border-radius: 4px;
+                font-size: 12px;
+            }
+
+            .image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+        .bottom {
+            width: 100%;
+            overflow: hidden;
+            transition: 0.3s;
+            .title {
+                margin-top: 4px;
+                font-size: 18px;
+                font-weight: 700;
+                white-space: nowrap;
+            }
+            .infoPrice {
+                display: none;
+                font-size: 14px;
+
+                &.free {
+                    color: $whiteLighter;
+                }
+                &.tvod {
+                    color: $mainTextColor;
+                }
+                &.svod {
+                    color: #3de8ff;
+                }
+            }
+            .infoMovie {
+                transition: 0.5s;
+                opacity: 0;
+                font-size: 12px;
+                color: $whiteLighter;
+            }
+        }
+    }
+}
+
+@include media('mobile') {
+    .card {
+        height: 240px;
+
+        .inner {
+            .imageWrapper {
+                height: 180px;
+            }
+        }
+
+        &:hover {
+            .inner {
+                position: relative;
+            }
+        }
+    }
+}
+.cancelIcon {
+    & > svg > path {
+        fill: #fff;
+    }
+}

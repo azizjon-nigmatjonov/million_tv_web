@@ -1,0 +1,24 @@
+.wrapperRelative {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  position: relative;
+}
+.wrapperRelative .wrapperAbsolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .movieInfoText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .buttonSection {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=VideoPlayerMobile.module.css.map */

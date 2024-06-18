@@ -1,0 +1,62 @@
+.formLabel {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 4px;
+    color: #a9a7b4;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #020c24;
+    border-radius: 12px;
+    padding: 52px 24px 24px;
+    width: 558px;
+
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+}
+.tableInput {
+    padding: 13px 12px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    outline: none;
+    border: none;
+    color: white;
+    &::placeholder {
+        color: white !important;
+        opacity: 0.5;
+    }
+    &:focus {
+        outline: none;
+        border: 1px solid #03a9f4 !important;
+    }
+}
+.tableSubmitButton button {
+    padding: 18px !important;
+    background: #03a9f4 !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    height: 56px !important;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+// @media (max-width: 1150px) {
+//     .tableSubmitButton button {
+//         position: absolute;
+//         bottom: 0;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         padding: 18px;
+//         background: #03a9f4;
+//         border-radius: 12px;
+//         width: 90%;
+//     }
+// }
